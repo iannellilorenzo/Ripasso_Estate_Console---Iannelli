@@ -47,13 +47,13 @@ class Program
             switch (azioneExe)
             {
                 case 2:
-                    Console.WriteLine($"Il numero di campi che compone il record è: {Iannelli.Azione2()}");
+                    Console.WriteLine($"Il numero di campi che compone il record è: {Iannelli.Azione2()}.");
 
                     SystemWait();
                     break;
 
                 case 3:
-                    Console.WriteLine($"La lunghezza massima dei record presenti è: {Iannelli.Azione3()}");
+                    Console.WriteLine($"La lunghezza massima dei record presenti è: {Iannelli.Azione3()}.");
 
                     SystemWait();
                     break;
@@ -66,7 +66,7 @@ class Program
                         lungs += Iannelli.Azione3Avanzato()[i] + "\n";
                     }
 
-                    Console.WriteLine($"La lunghezza massima di ogni campo è: \n{lungs}");
+                    Console.WriteLine($"La lunghezza massima di ogni campo è: \n{lungs}.");
 
                     SystemWait();
                     break;
@@ -121,7 +121,7 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine($"Elemento corrispondente trovato alla riga: {Iannelli.Azione7(ricerca)}");
+                        Console.WriteLine($"Elemento corrispondente trovato alla riga: {Iannelli.Azione7(ricerca)}.");
                     }
 
                     SystemWait();
@@ -153,7 +153,7 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine("Azione eseguita correttamente");
+                        Console.WriteLine("Azione eseguita correttamente.");
                     }
 
                     SystemWait();
@@ -165,10 +165,13 @@ class Program
 
                     Iannelli.Azione9(ricerca);
 
-                    Console.WriteLine("Azione eseguita correttamente");
+                    Console.WriteLine("Azione eseguita correttamente.");
 
                     SystemWait();
                     break;
+
+                default:
+                    Console.WriteLine("Indice di funzionalità non presente nell'elenco.");
 
             }
         } while (azioneExe != 0);
